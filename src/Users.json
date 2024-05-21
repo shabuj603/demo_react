@@ -1,0 +1,32 @@
+[
+    {
+        "fullname": "Kalaroa",
+        "age": 30,
+        "phone":[
+            {
+                "home": "01254879",
+                "office": "6254879"
+            }
+        ]
+    },
+    {
+        "fullname": "Satkhira",
+        "age": 50,
+        "phone":[
+            {
+                "home": "01254879",
+                "office": "6254879"
+            }
+        ]
+    },
+    {
+        "fullname": "Khulna",
+        "age": 30,
+        "phone":[
+            {
+                "home": "01254879",
+                "office": "6254879"
+            }
+        ]
+    }
+]

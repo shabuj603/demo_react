@@ -1,0 +1,26 @@
+[
+    {
+        "title": "call Home",
+        "description": "card 1 description",
+        "cardFooter": "card 1 Footer section"
+
+    },
+    {
+        "title": "call Mother",
+        "description": "card 2 description",
+        "cardFooter": "card 2 Footer section"
+
+    },
+    {
+        "title": "call Father",
+        "description": "card 3 description",
+        "cardFooter": "card 3 Footer section"
+
+    },
+    {
+        "title": "call Family",
+        "description": "card 4 description",
+        "cardFooter": "card 4 Footer section"
+
+    }
+]
