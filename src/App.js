@@ -8,6 +8,10 @@ import { FaCloudArrowDown, FaCow  } from "react-icons/fa6";
 import ReactBootstrap from "./react_bootstrap/React_bootstrap";
 import State from "./State";
 import SingIn from "./CONDITIONAL_COMPONENT/SingIn";
+import ClickHandler from "./EVENT_HANDLER_CLASS/ClickHandler";
+import EventBinding from "./EVENT_HANDLER_CLASS/EventBinding";
+import HookUseState from "./HOOK_USE_STATE/HookUseState";
+import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
 
 
 
@@ -19,6 +23,10 @@ import SingIn from "./CONDITIONAL_COMPONENT/SingIn";
 
 function App(){
     return <div>
+        <FunctionalHook/>
+        <HookUseState/>
+        <EventBinding/>
+        <ClickHandler/>
         <SingIn/>
         <State/>
         <ReactBootstrap/>
