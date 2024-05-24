@@ -12,6 +12,9 @@ import ClickHandler from "./EVENT_HANDLER_CLASS/ClickHandler";
 import EventBinding from "./EVENT_HANDLER_CLASS/EventBinding";
 import HookUseState from "./HOOK_USE_STATE/HookUseState";
 import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
+import Child from "./STATE_LIFTING/Child";
+import Todo from "./STATE_LIFTING/Todo";
+import NewTodo from "./STATE_LIFTING/NewTodo";
 
 
 
@@ -20,9 +23,17 @@ import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
 //    item.push(<Card  titleText={Data[i].title}description={Data[i].description} cardFooter={Data[i].cardFooter}/>)
     
 // }
-
 function App(){
+    const handleChild=(fromChild)=>{
+        console.log("add kolam child data"+fromChild);
+    }
+    const exmNewtodo=(newtodo)=>{
+        console.log(newtodo);
+    }
     return <div>
+        <NewTodo handleNewtodo={exmNewtodo}/>
+        <Todo title="learn to do title"/>
+        <Child onChild={handleChild}/>
         <FunctionalHook/>
         <HookUseState/>
         <EventBinding/>
