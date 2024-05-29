@@ -1,43 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
+import DataFatch from "./DataFatch";
 
 const UseEffectExample=()=>{
-    const[count, setCount]= useState(0);
-    const[todos, setTodos]= useState(null);
-    const[isLoding,setisLoding]=useState(true);
-    const[error, setError]= useState(false);
-
-
-useEffect(()=>{
-    setTimeout(()=>{
-        setCount((count)=>count+1)
-    },1000)
-},[])
-
-useEffect(()=>{
-    fetch('https://jsonplaceholder.typicode.com/todos')
-    .then((response)=>{
-            if(!response.ok){throw Error("Fatching datd not successfull")}
-            else{
-                return response.json()
-            }        
-    })
-  
-    .then((data)=>{
-        setTodos(data);    
-        setisLoding(false);
-        setError(false)
-    })
-    .catch((error)=>{
-        setError(error)
-        setisLoding(false);
-
-
-    })
-},[])
-
+const{data,isLoding,error}=DataFatch("https://jsonplaceholder.typicode.com/todos");
 const loadingMassage ="to do is loding...";
-const todosElement = todos && todos.map((todo)=>{
+const todosElement = data && data.map((todo)=>{
     return <div key={todo.id}>{todo.title}</div>
     });
     return(
