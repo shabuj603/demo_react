@@ -12,6 +12,7 @@ import ClickHandler from "./EVENT_HANDLER_CLASS/ClickHandler";
 import EventBinding from "./EVENT_HANDLER_CLASS/EventBinding";
 import HookUseState from "./HOOK_USE_STATE/HookUseState";
 import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
+import CountryApp from "./components/COUNTRY_APP/Countyr";
 
 
 
@@ -23,6 +24,7 @@ import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
 
 function App(){
     return <div>
+        <CountryApp/>
         <FunctionalHook/>
         <HookUseState/>
         <EventBinding/>
