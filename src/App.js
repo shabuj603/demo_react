@@ -12,6 +12,7 @@ import ClickHandler from "./EVENT_HANDLER_CLASS/ClickHandler";
 import EventBinding from "./EVENT_HANDLER_CLASS/EventBinding";
 import HookUseState from "./HOOK_USE_STATE/HookUseState";
 import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
+import UseEffectExample from "./USE_EFFECT/UseEffectExample";
 
 
 
@@ -23,6 +24,7 @@ import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
 
 function App(){
     return <div>
+        <UseEffectExample/>
         <FunctionalHook/>
         <HookUseState/>
         <EventBinding/>
