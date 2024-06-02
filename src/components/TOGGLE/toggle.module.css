@@ -1,0 +1,16 @@
+body {
+    background-color: #8f949e;
+    color: white;
+    padding: 40px;
+    font-family: Sans-Serif;
+    text-align: center;
+  }
+.titleClass{
+    background-color:"pink";
+    padding:"10px"
+}
+.bigblue {
+    background-color: rgb(255, 188, 30);
+    font-family: Sans-Serif;
+    text-align: center;
+  }
