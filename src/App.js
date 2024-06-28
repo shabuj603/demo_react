@@ -12,6 +12,20 @@ import ClickHandler from "./EVENT_HANDLER_CLASS/ClickHandler";
 import EventBinding from "./EVENT_HANDLER_CLASS/EventBinding";
 import HookUseState from "./HOOK_USE_STATE/HookUseState";
 import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
+import HandelCss from './components/CssFolder/index';
+import Component1 from "./components/PROP_DRILLING/Conponent1";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './FONT_PAGE/Home';
+import Login from './FONT_PAGE/Login';
+import Singup from './FONT_PAGE/Signup';
+import Error from "./FONT_PAGE/Error";
+import NavScrollExample from "./FONT_PAGE/Navbar";
+import Navlink2 from "./FONT_PAGE/Navexm";
+import Contract from "./FONT_PAGE/Contract";
+import Lottery from "./FONT_PAGE/Lottery";
+import Blogs from "./FONT_PAGE/Blogs";
+import Blog from "./FONT_PAGE/Blog";
+import Traffic from './FONT_PAGE/Users';
 
 
 
@@ -23,6 +37,27 @@ import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
 
 function App(){
     return <div>
+        <BrowserRouter>
+        <NavScrollExample/>
+        {/* <Navlink2/> */}
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/login" element={<Login/>}/>
+                <Route path="/signup" element={<Singup/>}/>
+                <Route path="/lottery" element={<Lottery/>}/>
+                 <Route path="/contract" element={<Contract/>}/>
+                 <Route path="/users" element={<Traffic/>}/>
+
+                 <Route path="/blogs" element={<Blogs/>}/>
+                 <Route path="/blogs/:title" element={<Blog/>}/>
+
+
+                 <Route path="*" element={<Error/>} />                
+            </Routes>
+        
+        </BrowserRouter>
+        <Component1/>
+        <HandelCss/>
         <FunctionalHook/>
         <HookUseState/>
         <EventBinding/>
