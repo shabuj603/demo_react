@@ -12,6 +12,9 @@ import ClickHandler from "./EVENT_HANDLER_CLASS/ClickHandler";
 import EventBinding from "./EVENT_HANDLER_CLASS/EventBinding";
 import HookUseState from "./HOOK_USE_STATE/HookUseState";
 import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
+import Pagetitle from "./components/title/Pagetitle";
+import { Header } from "./components/header/Header";
+
 
 
 
@@ -23,6 +26,8 @@ import FunctionalHook from "./HOOK_USE_STATE/FunctionalHook";
 
 function App(){
     return <div>
+        <Header/>
+       <Pagetitle title="Home page"/>
         <FunctionalHook/>
         <HookUseState/>
         <EventBinding/>
